@@ -1,1 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko"> 
 
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+</head>
+
+<body>
+    <h3> Hello Docker!! </h3>
+    <p> The MARKS below is associated with Database   </p>
+    <h1> Bookmarks </h1>
+    <ul>
+        {% for marks in bookmark %}
+            <li>
+                <strong>{{ marks[0] }}</strong>: <a href="{{ marks[1] }}" target="_blank">{{ marks[1] }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    
+</body>
+
+</html>
